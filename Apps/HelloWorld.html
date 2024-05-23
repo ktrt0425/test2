@@ -40,6 +40,35 @@ var point = viewer.entities.add({
         }
     });
       
+var polygon = viewer.entities.add({
+    name:"山頂駅",
+    description:
+      所在地　　〒325-0301 栃木県那須郡那須町湯本
+      連絡先　　TEL 0287-76-2449
+      HP　　　　https://www.nasu-ropeway.jp/
+      営業時間　8:30～16:30
+      最新映像　https://www.dif.pref.tochigi.lg.jp/main.asp?observe_time=202405231130&area_no=5&mno=0827&screen=camera&rain=time&list=&min_interval=30
+    polygon : {
+        hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+          139.97061073780063,37.12395180392767,0,
+          139.97057318687442,37.12414855581597,0,
+          139.97072875499728,37.12416994186,0,
+          139.970680475235,37.12438807916365,0,
+          139.97085213661197,37.124418019528804,0,
+          139.97088968753818,37.124216991135526,0,
+          139.9708414077759,37.12420415951781,0,
+          139.97086286544803,37.124114338133,0,
+          139.97078239917758,37.12410578370987,0,
+          139.97079849243167,37.12396891280782,0,
+          139.97061073780063,37.12395180392767,0]),
+        extrudedHeight: 333.0,
+        width : 5,
+        material : Cesium.Color.RED.withAlpha(0.5),
+        outline : true,
+        outlineColor : Cesium.Color.BLACK
+    }
+});
+      
 var whiteLine = viewer.entities.add({
     name:"那須ロープウェイ",
     description:"那須ロープウェイ",　
